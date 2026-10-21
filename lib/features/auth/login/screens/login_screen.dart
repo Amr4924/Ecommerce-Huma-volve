@@ -33,8 +33,6 @@ class _LoginScreenState extends State<LoginScreen> {
           email: emailController.text.trim(),
           password: passwordController.text.trim(),
         );
-        debugPrint("Access Token: ${response.accessTokens}");
-        debugPrint("refresh Token: ${response.refreshTokens}");
         setState(() {
           isLoding = false;
         });

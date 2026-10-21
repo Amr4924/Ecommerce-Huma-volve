@@ -37,15 +37,15 @@ class _SignUpScreenState extends State<SignUpScreen> {
             password: passwordController.text.trim(),
           ),
         );
-        debugPrint("id: ${response.id}");
-        debugPrint("name: ${response.name}");
-        debugPrint("password: ${response.password}");
-        debugPrint("email: ${response.email}");
-        debugPrint("role: ${response.role}");
-        debugPrint("avatar: ${response.avatar}");
         setState(() {
           isLoding = false;
         });
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text("SignUp successfu! Plz Login"),
+            backgroundColor: Colors.green,
+          ),
+        );
         if (!mounted) return;
         Navigator.pushReplacement(
           context,
