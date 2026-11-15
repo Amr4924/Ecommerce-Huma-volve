@@ -30,7 +30,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         isLoding = true;
       });
       try {
-        final response = await signupServices.signup(
+        final  response = await signupServices.signup(
           SignUpReqModel(
             email: emailController.text.trim(),
             fullName: nameController.text.trim(),
@@ -40,13 +40,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
         setState(() {
           isLoding = false;
         });
+        if (!mounted) return;
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text("SignUp successfu! Plz Login"),
             backgroundColor: Colors.green,
           ),
         );
-        if (!mounted) return;
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (context) => const LoginScreen()),

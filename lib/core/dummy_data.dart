@@ -26,7 +26,7 @@ final dummyProducts = [
     name: 'Classic White Sneakers',
     description: 'Comfortable and stylish white sneakers for everyday use.',
     price: 59.99,
-    imageUrl: 'https://picsum.photos/seed/sneakers/300/300',
+    imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600',
     colors: [Colors.white, Colors.black, Colors.grey],
     sizes: ['40', '41', '42', '43'],
   ),
@@ -35,7 +35,7 @@ final dummyProducts = [
     name: 'Denim Jacket',
     description: 'A classic denim jacket that never goes out of style.',
     price: 89.99,
-    imageUrl: 'https://picsum.photos/seed/jacket/300/300',
+    imageUrl: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600',
     colors: [Colors.blue, Colors.black],
     sizes: ['S', 'M', 'L', 'XL'],
   ),
@@ -44,7 +44,8 @@ final dummyProducts = [
     name: 'Wireless Headphones',
     description: 'High-quality noise-canceling wireless headphones.',
     price: 199.99,
-    imageUrl: 'https://picsum.photos/seed/headphones/300/300',
+    imageUrl:
+        'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600',
     colors: [Colors.black, Colors.grey],
     sizes: ['One Size'],
   ),
@@ -53,7 +54,8 @@ final dummyProducts = [
     name: 'Smart Watch',
     description: 'Stay connected and track your fitness with this smart watch.',
     price: 149.99,
-    imageUrl: 'https://picsum.photos/seed/watch/300/300',
+    imageUrl:
+        'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600',
     colors: [Colors.black, Colors.blue, Colors.pink],
     sizes: ['One Size'],
   ),
@@ -103,7 +105,8 @@ class UserProfile {
 final dummyUser = UserProfile(
   name: 'John Doe',
   email: 'john.doe@example.com',
-  profilePictureUrl: 'https://picsum.photos/seed/user/150/150',
+  profilePictureUrl:
+      'https://images.unsplash.com/photo-1494790108377-2616b612b786?w=300',
 );
 
 final dummyCategories = [

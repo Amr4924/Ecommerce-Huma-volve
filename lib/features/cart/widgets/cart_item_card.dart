@@ -33,6 +33,8 @@ class CartItemCard extends StatelessWidget {
               width: 90,
               height: 90,
               fit: BoxFit.cover,
+              errorBuilder: (context, error, stackTrace) =>
+                  const Center(child: Icon(Icons.image_not_supported_outlined)),
             ),
           ),
           const SizedBox(width: 16),
@@ -52,10 +54,7 @@ class CartItemCard extends StatelessWidget {
                 const SizedBox(height: 6),
                 Text(
                   'Size: ${cartItem.selectedSize}',
-                  style: TextStyle(
-                    color: Colors.grey.shade600,
-                    fontSize: 14,
-                  ),
+                  style: TextStyle(color: Colors.grey.shade600, fontSize: 14),
                 ),
                 const SizedBox(height: 12),
                 Row(
@@ -70,7 +69,10 @@ class CartItemCard extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 8,
+                        vertical: 4,
+                      ),
                       decoration: BoxDecoration(
                         color: AppTheme.background,
                         borderRadius: BorderRadius.circular(12),
